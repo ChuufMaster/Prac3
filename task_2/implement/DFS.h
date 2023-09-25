@@ -2,7 +2,7 @@
 #define DFS_H
 
 #include "Iterator.h"
-class DFS :  Iterator {
+class DFS :public  Iterator {
 
 
 public:

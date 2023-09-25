@@ -1,5 +1,6 @@
 #include "BFS.h"
-
+#include "Tile.h"
+#include "Trap.h"
 
 /* BFS_Maze(entity, maze):
     Initialize an empty queue
@@ -20,6 +21,36 @@
     Return "Item not found" (if item not found)
  */
 Tile* BFS::next() {
-	// TODO - implement BFS::next
-	throw "Not yet implemented";
+	if(this->current->getTrap()->toString() == "H"){
+		return this->current;
+	}
+
+	if(this->current->left != NULL && this->wasVisited(this->current->left)){
+		this->visited.push(this->current->left);
+		this->current = this->current->left;
+		return this->current;
+	}
+
+	if(this->current->top != NULL && this->wasVisited(this->current->top)){
+		this->visited.push(this->current->top);
+		this->current = this->current->top;
+		return this->current;
+	}
+	
+	if(this->current->right != NULL && this->wasVisited(this->current->right)){
+		this->visited.push(this->current->right);
+		this->current = this->current->right;
+		return this->current;
+	}
+
+
+	if(this->current->down != NULL && this->wasVisited(this->current->down)){
+		this->visited.push(this->current->down);
+		this->current = this->current->down;
+		return this->current;
+	}
+
+
+
+	return NULL;
 }
