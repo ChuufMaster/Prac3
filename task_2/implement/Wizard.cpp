@@ -1,8 +1,8 @@
 #include "Wizard.h"
+#include "BFS.h"
 
-Wizard::Wizard() {
-	// TODO - implement Wizard::Wizard
-	throw "Not yet implemented";
+Wizard::Wizard(int health, int damage):Hero(health, damage) {
+	this->setIterator(new BFS());
 }
 
 void Wizard::ability() {

@@ -1,6 +1,7 @@
 #ifndef HERO_H
 #define HERO_H
 
+class Iterator;
 class Hero {
 
 private:
@@ -17,11 +18,11 @@ public:
 
 	void setDamage(int damage);
 
+	void setIterator(Iterator* _i);
+
 	virtual void ability() = 0;
 
-	boolean getIteratorType();
-
-	void setIteratorType(boolean iteratorType);
+	Hero(int health, int damage);
 };
 
 #endif
