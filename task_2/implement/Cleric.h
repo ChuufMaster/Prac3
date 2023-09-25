@@ -1,11 +1,12 @@
 #ifndef CLERIC_H
 #define CLERIC_H
 
-class Cleric : Hero {
+#include "Hero.h"
+class Cleric :public Hero {
 
 
 public:
-	Cleric();
+	Cleric(int health, int damage);
 
 	void ability();
 };

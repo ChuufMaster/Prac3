@@ -1,11 +1,13 @@
 #ifndef WIZARD_H
 #define WIZARD_H
 
-class Wizard : Hero {
+#include "Hero.h"
+
+class Wizard :public Hero {
 
 
 public:
-	Wizard();
+	Wizard(int health, int damage);
 
 	void ability();
 };

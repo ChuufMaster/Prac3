@@ -13,7 +13,7 @@ class Lair {
 
 private:
 	vector<Tile*> tiles;
-
+	vector<Hero*> heroes;
 public:
 	Tile* getFirstTile();
 
@@ -21,7 +21,9 @@ public:
 
 	string toString();
 
-	void addTile(Tile* tile);
+	void addTile(Tile* _tile);
+
+	void addHero(Hero* _h);
 
 	Lair();
 };

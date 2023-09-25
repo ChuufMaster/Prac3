@@ -16,12 +16,9 @@ void Hero::setDamage(int damage) {
 	this->damage = damage;
 }
 
-boolean Hero::getIteratorType() {
-	// TODO - implement Hero::getIteratorType
-	throw "Not yet implemented";
+
+void Hero::setIterator(Iterator* _i) {
+	this->iterator = _i;
 }
 
-void Hero::setIteratorType(boolean iteratorType) {
-	// TODO - implement Hero::setIteratorType
-	throw "Not yet implemented";
-}
+Hero::Hero(int health, int damage):health(health), damage(damage){}

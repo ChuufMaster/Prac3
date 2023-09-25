@@ -15,8 +15,12 @@ string Lair::toString() {
 	throw "Not yet implemented";
 }
 
-void Lair::addTile(Tile* tile){
-	this->tiles.push_back(tile);
+void Lair::addHero(Hero* _h){
+	this->heroes.push_back(_h);
+}
+
+void Lair::addTile(Tile* _tile){
+	this->tiles.push_back(_tile);
 };
 
 Lair::Lair() {
