@@ -49,7 +49,7 @@ public:
 
 	void setVote(int i, bool vote);
 
-	Contract(int parties, string name);
+	Contract(int parties, string name, Subscriber* sub);
 
 	~Contract();
 

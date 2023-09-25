@@ -4,6 +4,7 @@
 #include "State.h"
 #include "Accepted.h"
 #include "Rejected.h"
+//#include "Contract.h"
 
 #include<string>
 using namespace std;

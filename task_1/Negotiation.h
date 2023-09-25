@@ -8,7 +8,7 @@
 #include<string>
 using namespace std;
 
-class Negotiation :public State {
+class Negotiation : public State {
 
 
 public:

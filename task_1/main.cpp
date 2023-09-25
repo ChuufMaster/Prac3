@@ -1,5 +1,6 @@
 #include "State.h"
 #include "Contract.h"
+#include "Subscriber.h"
 
 #include<iostream>
 #include<string>
@@ -55,7 +56,8 @@ int main(int argc, const char** argv) {
         getline(cin, input);
         num_parties = stoi(input);
 
-        Contract* loop_contract = new Contract(num_parties, contract_name);
+        Subscriber* sub = new Subscriber();
+        Contract* loop_contract = new Contract(num_parties, contract_name, sub);
 
         bool cont_loop = true;
         while (cont_loop) {

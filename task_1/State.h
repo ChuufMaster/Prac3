@@ -2,11 +2,12 @@
 #define STATE_H
 
 //#include "Contract.h"
+//#include "Subscriber.h"
 #include<string>
 using namespace std;
 
 class Contract;
-
+class Subscriber;
 class State {
 
 protected:
@@ -25,7 +26,17 @@ public:
 
 	virtual string getStatus() = 0;
 
+	void attach(Subscriber* o);
+	void detach(Subscriber* o);
+
+	void notify();
+
+	Subscriber* getSub();
+
 	State();
+
+private:
+	Subscriber* subscriberList;
 };
 
 #endif
