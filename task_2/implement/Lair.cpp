@@ -10,22 +10,15 @@ Hero* Lair::nextHero() {
 	throw "Not yet implemented";
 }
 
-boolean Lair::isDone() {
-	// TODO - implement Lair::isDone
-	throw "Not yet implemented";
-}
-
-Tile* Lair::getCurrent() {
-	// TODO - implement Lair::getCurrent
-	throw "Not yet implemented";
-}
-
 string Lair::toString() {
 	// TODO - implement Lair::toString
 	throw "Not yet implemented";
 }
 
+void Lair::addTile(Tile* tile){
+	this->tiles.push_back(tile);
+};
+
 Lair::Lair() {
-	// TODO - implement Lair::Lair
-	throw "Not yet implemented";
+	
 }

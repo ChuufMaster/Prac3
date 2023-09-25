@@ -19,10 +19,6 @@ public:
 
 	Hero* nextHero();
 
-	bool isDone();
-
-	Tile* getCurrent();
-
 	string toString();
 
 	void addTile(Tile* tile);

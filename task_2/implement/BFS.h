@@ -3,7 +3,7 @@
 
 #include "Iterator.h"
 
-class BFS :public Iterator {
+class BFS : public Iterator {
 
 
 public:
