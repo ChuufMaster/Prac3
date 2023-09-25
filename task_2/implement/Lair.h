@@ -25,6 +25,8 @@ public:
 
 	string toString();
 
+	void addTile(Tile* tile);
+
 	Lair();
 };
 

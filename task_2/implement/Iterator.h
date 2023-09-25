@@ -1,10 +1,15 @@
 #ifndef ITERATOR_H
 #define ITERATOR_H
 
+#include <queue>
+
+using namespace std;
+
+class Tile;
 class Iterator {
 
 private:
-	Queue<Tile*> visited;
+	queue<Tile*> visited;
 	Tile* current;
 
 public:

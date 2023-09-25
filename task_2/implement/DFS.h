@@ -1,7 +1,8 @@
 #ifndef DFS_H
 #define DFS_H
 
-class DFS : Iterator {
+#include "Iterator.h"
+class DFS :public Iterator {
 
 
 public:

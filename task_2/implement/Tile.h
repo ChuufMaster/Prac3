@@ -21,9 +21,11 @@ public:
 
 	void setTrap(Trap* trap);
 
-	Tile(Trap* trap);
+	Tile(Trap* trap, int id);
 
 	string toString();
+
+	void attach(string direction, Tile* _t);
 };
 
 #endif

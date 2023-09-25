@@ -1,7 +1,9 @@
 #ifndef BFS_H
 #define BFS_H
 
-class BFS : Iterator {
+#include "Iterator.h"
+
+class BFS :public Iterator {
 
 
 public:
