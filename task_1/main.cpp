@@ -9,37 +9,6 @@ using namespace std;
 
 int main(int argc, const char** argv) {
 
-    //Contract* contract = new Contract(2, "test");
-
-    //cout << contract->toString() << endl;
-
-    //contract->addCondition("I offer you Code");
-    //contract->addCondition("You give me Marks");
-
-    //cout << contract->toString();
-
-    //contract->accept();
-    //cout << contract->toString();
-
-    //contract->addCondition("I want more");
-
-    //cout << contract->toString();
-
-    //contract->accept();
-    //cout << contract->toString();
-
-    //contract->removeCondition("I want more");
-    //cout << contract->toString();
-
-    //contract->accept();
-    //contract->accept();
-    //cout << contract->toString();
-
-    //contract->complete();
-    //cout << contract->toString();
-
-    //contract->complete();
-    //cout << contract->toString();
 
     bool cont_contract = true;
     while (cont_contract) {
