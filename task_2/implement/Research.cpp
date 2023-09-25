@@ -1,6 +1,6 @@
 #include "Research.h"
 
-boolean Research::getUnlocked() {
+bool Research::getUnlocked() {
 	return this->unlocked;
 }
 

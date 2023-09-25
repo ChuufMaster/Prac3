@@ -1,11 +1,13 @@
 #ifndef NUKETRAP_H
 #define NUKETRAP_H
-
-class nukeTrap : Trap {
+#include "Trap.h"
+#include <string>
+using namespace std;
+class nukeTrap : public Trap {
 
 
 public:
-	void steppedOn();
+	int steppedOn();
 
 	nukeTrap();
 

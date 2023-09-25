@@ -1,19 +1,27 @@
 #include "Bank.h"
 
-int Bank::getCurrentGold() {
+int Bank::getCurrentGold()
+{
 	return this->currentGold;
 }
 
-void Bank::setCurrentGold(int currentGold) {
+void Bank::setCurrentGold(int currentGold)
+{
 	this->currentGold = currentGold;
 }
 
-Bank::Bank(int startingGold) {
-	// TODO - implement Bank::Bank
-	throw "Not yet implemented";
+Bank::Bank(int startingGold)
+{
+	startingGold = 1500;
+	this->currentGold = startingGold;
 }
 
-void Bank::reduceGold(int reductionAmount) {
-	// TODO - implement Bank::reduceGold
-	throw "Not yet implemented";
+void Bank::newRound()
+{
+	this->currentGold += 250;
+}
+
+void Bank::reduceGold(int reductionAmount)
+{
+	this->currentGold = this->currentGold - reductionAmount;
 }

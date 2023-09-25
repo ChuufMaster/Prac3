@@ -1,7 +1,8 @@
 #ifndef BANK_H
 #define BANK_H
 
-class Bank {
+class Bank
+{
 
 private:
 	int currentGold;
@@ -14,6 +15,8 @@ public:
 	Bank(int startingGold);
 
 	void reduceGold(int reductionAmount);
+
+	void newRound();
 };
 
 #endif

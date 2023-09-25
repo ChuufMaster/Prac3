@@ -1,16 +1,20 @@
 #ifndef TRAP_H
 #define TRAP_H
+#include <string>
+#include "Research.h"
+using namespace std;
 
-class Trap : Research {
+class Trap : public Research {
 
-private:
-	int damage;
-	int cost;
+
 
 public:
-	virtual void steppedOn() = 0;
+	virtual int steppedOn() = 0;
 
 	virtual string toString() = 0;
+
+		int damage;
+	int cost;
 };
 
 #endif

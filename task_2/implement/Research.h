@@ -1,19 +1,19 @@
 #ifndef RESEARCH_H
 #define RESEARCH_H
-
+#include <string>
+using namespace std;
 class Research {
 
 private:
 	int researchCost;
 	int roundsTillComplete;
-	boolean unlocked;
-	traps traps[];
+	bool unlocked;
 	Research** researchQueue;
 
 public:
-	boolean getUnlocked();
+	bool getUnlocked();
 
-	void setUnlocked(boolean unlocked);
+	void setUnlocked(bool unlocked);
 
 	void addToQueue();
 };

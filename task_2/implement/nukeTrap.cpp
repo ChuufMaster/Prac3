@@ -1,13 +1,11 @@
 #include "nukeTrap.h"
 
-void nukeTrap::steppedOn() {
-	// TODO - implement nukeTrap::steppedOn
-	throw "Not yet implemented";
+int nukeTrap::steppedOn() {
+return 1000;
 }
 
 nukeTrap::nukeTrap() {
-	// TODO - implement nukeTrap::nukeTrap
-	throw "Not yet implemented";
+	this->damage = 1000;
 }
 
 string nukeTrap::toString() {
