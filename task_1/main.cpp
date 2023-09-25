@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, const char** argv) {
 
-
+    //cout << top << ═ << ╬ << ═ <<endl << __ << ╩;
     bool cont_contract = true;
     while (cont_contract) {
 
