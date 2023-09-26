@@ -1,41 +1,50 @@
 #include "Engine.h"
 
-bool Engine::notifyBankReduction() {
-	// TODO - implement Engine::notifyBank
-	throw "Not yet implemented";
+Engine::Engine(Bank* bank,Research* research,Hero* hero){
+	this->bank = bank;
+	this->hero = hero;
+	this->research = research;
 }
 
-int Engine::requestBankTotal(){
-		// TODO - implement Engine::notifyBank
-	throw "Not yet implemented";
+bool Engine::notifyBankReduction(int amount)
+{
+return this->bank->reduceGold(amount);
 }
 
-void Engine::notifyTile() {
+int Engine::requestBankTotal()
+{
+return this->bank->getCurrentGold();
+}
+
+void Engine::notifyTile()
+{
 	// TODO - implement Engine::notifyTile
 	throw "Not yet implemented";
 }
 
-void Engine::notifyHero() {
+void Engine::notifyHero(int damage,string character)
+{
 	// TODO - implement Engine::notifyHero
 	throw "Not yet implemented";
 }
 
-void Engine::notifyPlayer() {
+void Engine::notifyPlayer()
+{
 	// TODO - implement Engine::notifyPlayer
 	throw "Not yet implemented";
 }
 
-void Engine::notifyResearch() {
-	// TODO - implement Engine::notifyResearch
-	throw "Not yet implemented";
+void Engine::notifyResearch(string trapIcon)
+{
+	this->research->removeFromQueue(trapIcon);
 }
 
-void Engine::executeResearch() {
-	// TODO - implement Engine::executeResearch
-	throw "Not yet implemented";
+void Engine::executeResearch(int trapNum)
+{
+	this->research->addToQueue(trapNum);
 }
 
-	void notifyNewPlayerRound(){
-			// TODO - implement Engine::executeResearch
-	throw "Not yet implemented";
-	}
+void Engine::notifyNewPlayerRound()
+{
+	this->research->newRound();
+}

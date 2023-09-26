@@ -9,12 +9,13 @@ class Trap : public Research {
 
 
 public:
-	virtual int steppedOn() = 0;
 
-	virtual string toString() = 0;
-
+	string toString();
+	Engine* core;
 		int damage;
 	int cost;
+	string character;
+	int steppedOn();
 };
 
 #endif

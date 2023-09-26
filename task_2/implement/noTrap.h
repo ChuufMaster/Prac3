@@ -10,8 +10,6 @@ public:
 	int steppedOn();
 
 	noTrap();
-
-	string toString();
 };
 
 #endif

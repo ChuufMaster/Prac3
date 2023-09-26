@@ -1,16 +1,13 @@
 #include "weakTrap.h"
 
-void weakTrap::steppedOn() {
-	// TODO - implement weakTrap::steppedOn
-	throw "Not yet implemented";
+int weakTrap::steppedOn() {
+	this->core->notifyHero(damage,character);
+return damage;
 }
 
-weakTrap::weakTrap() {
-	// TODO - implement weakTrap::weakTrap
-	throw "Not yet implemented";
-}
-
-string weakTrap::toString() {
-	// TODO - implement weakTrap::toString
-	throw "Not yet implemented";
+weakTrap::weakTrap(Engine* core) {
+	this->damage = 50;
+	this->character = "W";
+	this->cost = 150;
+	this->core = core;
 }

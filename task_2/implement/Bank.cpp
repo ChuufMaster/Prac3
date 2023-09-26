@@ -21,7 +21,11 @@ void Bank::newRound()
 	this->currentGold += 250;
 }
 
-void Bank::reduceGold(int reductionAmount)
+bool Bank::reduceGold(int reductionAmount)
 {
+	if(this->currentGold - reductionAmount <=0){
+		return false;
+	}
 	this->currentGold = this->currentGold - reductionAmount;
+	return true;
 }

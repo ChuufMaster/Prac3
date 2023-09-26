@@ -12,8 +12,8 @@ public:
 	int roundsTillComplete;
 	bool unlocked;
 	Engine* heart;
-	Research* traps[5];
-	queue<Research*> researchQueue;
+	Trap* traps[5];
+	queue<Trap*> researchQueue;
 
 public:
 	bool getUnlocked();
@@ -23,8 +23,8 @@ public:
 		void newRound();
 
 	void addToQueue(int trapNum);
-
-	Research(Research* traps[],Engine* core);
+	void removeFromQueue(string trapIcon);
+	Research(Trap* traps[],Engine* core);
 		Research();
 };
 
