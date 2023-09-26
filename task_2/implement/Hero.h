@@ -2,13 +2,14 @@
 #define HERO_H
 
 class Iterator;
+class Engine;
 class Hero {
 
 private:
 	int health;
 	int damage;
 	Iterator* iterator;
-
+	Engine* heart;
 public:
 	int getHealth();
 
