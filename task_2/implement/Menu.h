@@ -1,11 +1,22 @@
 #ifndef MENU_H
 #define MENU_H
 
+#include <string>
+
+class Engine;
+class Lair;
+
+using namespace std;
+
 class Menu {
 
+private:
+	int numTrap = 0;
+	Engine* core;
+	Lair* lair;
 
 public:
-	void addTile();
+	void addTile(string param);
 
 	void removeTile();
 
@@ -18,6 +29,8 @@ public:
 	void removeTrapFromQueue();
 
 	void viewHorde();
+
+	Menu();
 };
 
 #endif

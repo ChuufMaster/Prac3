@@ -26,7 +26,7 @@ public:
 
 	string toString();
 
-	void addTile(Tile* _tile, int _x, int _y);
+	void addTile(Tile* _tile, int _col, int _row);
 
 	void addHero(Hero* _h);
 

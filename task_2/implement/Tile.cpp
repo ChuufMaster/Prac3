@@ -10,7 +10,7 @@ void Tile::setTrap(Trap* trap) {
 	this->trap = trap;
 }
 
-Tile::Tile(Trap* trap, int id):trap(trap),id(id) {
+Tile::Tile(Trap* trap, int id, Engine* core):trap(trap),id(id), core(core) {
 
 }
 

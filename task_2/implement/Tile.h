@@ -5,12 +5,14 @@
 #include <vector>
 
 class Trap;
+class Engine;
 
 using namespace std;
 class Tile {
 
 private:
 	Trap* trap;
+	Engine* core;
 public:
 	Tile* top = NULL;
 	Tile* down = NULL;
@@ -23,7 +25,7 @@ public:
 
 	void setTrap(Trap* trap);
 
-	Tile(Trap* trap, int id);
+	Tile(Trap* trap, int id, Engine* core);
 
 	vector<vector<char>> toString();
 
