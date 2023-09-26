@@ -17,7 +17,7 @@ int main(int argc, const char** argv) {
         }else if(param == "map"){
             menu->printMap();
         }else if(param == "remove research"){
-            menu->removeTrapFromQueue(param[0]);
+            //menu->removeTrapFromQueue(param[0]);
         }else if(param == "horde"){
             menu->viewHorde();
         }

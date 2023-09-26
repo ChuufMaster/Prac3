@@ -80,3 +80,7 @@ Tile* Lair::attach(Tile* _t, int _col, int _row, char direction) {
 Lair::Lair() {
 	this->grid.resize(5, vector<Tile*>(5, nullptr));
 }
+
+void Lair::removeTile(int _col, int _row){
+	this->grid[_row][_col] = nullptr;
+}
