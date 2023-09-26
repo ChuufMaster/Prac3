@@ -1,21 +1,28 @@
 #ifndef RESEARCH_H
 #define RESEARCH_H
 #include <string>
+#include <queue>
+#include "Engine.h"
 using namespace std;
 class Research {
 
-private:
+public:
 	int researchCost;
 	int roundsTillComplete;
 	bool unlocked;
-	Research** researchQueue;
+	Engine* heart;
+	Research* traps[5];
+	queue<Research*> researchQueue;
 
 public:
 	bool getUnlocked();
 
-	void setUnlocked(bool unlocked);
+	void setUnlocked();
 
-	void addToQueue();
+	void addToQueue(int trapNum);
+
+	Research(Research* traps[],Engine* core);
+		Research();
 };
 
 #endif

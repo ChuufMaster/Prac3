@@ -1,7 +1,12 @@
 #include "Engine.h"
 
-void Engine::notifyBank() {
+bool Engine::notifyBankReduction() {
 	// TODO - implement Engine::notifyBank
+	throw "Not yet implemented";
+}
+
+int Engine::requestBankTotal(){
+		// TODO - implement Engine::notifyBank
 	throw "Not yet implemented";
 }
 
@@ -29,3 +34,8 @@ void Engine::executeResearch() {
 	// TODO - implement Engine::executeResearch
 	throw "Not yet implemented";
 }
+
+	void notifyNewPlayerRound(){
+			// TODO - implement Engine::executeResearch
+	throw "Not yet implemented";
+	}

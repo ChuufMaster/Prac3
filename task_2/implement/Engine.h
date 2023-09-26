@@ -7,8 +7,8 @@ private:
 	int roundCounter;
 
 public:
-	void notifyBank();
-
+	bool notifyBankReduction();
+	int requestBankTotal();
 	void notifyTile();
 
 	void notifyHero();
@@ -18,6 +18,8 @@ public:
 	void notifyResearch();
 
 	void executeResearch();
+
+	void notifyNewPlayerRound();
 };
 
 #endif
