@@ -48,9 +48,8 @@ void Menu::addTrap() {
 	throw "Not yet implemented";
 }
 
-void Menu::removeTrap() {
-	// TODO - implement Menu::removeTrap
-	throw "Not yet implemented";
+void Menu::removeTrap(string param) {
+	this->lair->removeTile(param[0], param[1]);
 }
 
 void Menu::researchTrap(int param) {
@@ -66,11 +65,7 @@ void Menu::removeTrapFromQueue(string character) {
 }
 
 void Menu::viewHorde() {
-<<<<<<< HEAD
 cout<<"HOARD TOTAL: "<<this->core->requestBankTotal();
-=======
-	cout << this->core->requestBankTotal() << endl;
->>>>>>> f86ae318bddf953e7277787fcbcdaa63f73f4033
 }
 
 Menu::Menu(){

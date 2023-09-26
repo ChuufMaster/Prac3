@@ -31,6 +31,8 @@ public:
 	void addHero(Hero* _h);
 
 	Lair();
+
+	void removeTile(int _col, int _row);
 };
 
 #endif

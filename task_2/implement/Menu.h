@@ -22,7 +22,7 @@ public:
 
 	void addTrap();
 
-	void removeTrap();
+	void removeTrap(string param);
 
 	void researchTrap(int param);
 
