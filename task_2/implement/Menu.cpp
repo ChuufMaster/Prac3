@@ -54,17 +54,19 @@ void Menu::removeTrap() {
 }
 
 void Menu::researchTrap(int param) {
-	this->core->
+	this->core->executeResearch(param);
 }
 
-void Menu::removeTrapFromQueue() {
-	// TODO - implement Menu::removeTrapFromQueue
-	throw "Not yet implemented";
+void Menu::printMap(){
+ cout<<	this->lair->toString();
+}
+
+void Menu::removeTrapFromQueue(string character) {
+ this->core->notifyResearch(character);
 }
 
 void Menu::viewHorde() {
-	// TODO - implement Menu::viewHorde
-	throw "Not yet implemented";
+cout<<"HOARD TOTAL: "<<this->core->requestBankTotal();
 }
 
 Menu::Menu(){

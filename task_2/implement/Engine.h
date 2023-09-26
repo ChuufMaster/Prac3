@@ -11,7 +11,7 @@ using namespace std;
 class Engine
 {
 
-private:
+public:
 	int roundCounter;
 	Bank* bank;
 	Research* research;

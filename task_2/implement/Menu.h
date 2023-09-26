@@ -24,9 +24,11 @@ public:
 
 	void removeTrap();
 
-	void researchTrap();
+	void researchTrap(int param);
 
-	void removeTrapFromQueue();
+	void printMap();
+
+	void removeTrapFromQueue(string character);
 
 	void viewHorde();
 

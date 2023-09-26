@@ -3,7 +3,7 @@
 #include "Trap.h"
 #include <string>
 using namespace std;
-class treasureHoard : Trap {
+class treasureHoard : public Trap {
 
 
 public:

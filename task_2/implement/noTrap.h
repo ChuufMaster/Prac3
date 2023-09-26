@@ -3,7 +3,7 @@
 #include "Trap.h"
 #include <string>
 using namespace std;
-class noTrap : Trap {
+class noTrap : public Trap {
 
 
 public:
