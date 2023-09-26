@@ -7,6 +7,6 @@ string Trap::toString(){
 }
 
 int Trap::steppedOn(){
-    
+    this->core->notifyHero(damage,character);
     return this->damage;
 }

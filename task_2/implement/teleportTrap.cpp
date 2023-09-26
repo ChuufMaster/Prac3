@@ -1,16 +1,11 @@
 #include "teleportTrap.h"
 
-void teleportTrap::steppedOn() {
-	// TODO - implement teleportTrap::steppedOn
-	throw "Not yet implemented";
+
+
+teleportTrap::teleportTrap(Engine* core) {
+	this->damage = 0;
+	this->character = "T";
+	this->cost = 450;
+	this->core = core;
 }
 
-teleportTrap::teleportTrap() {
-	// TODO - implement teleportTrap::teleportTrap
-	throw "Not yet implemented";
-}
-
-string teleportTrap::toString() {
-	// TODO - implement teleportTrap::toString
-	throw "Not yet implemented";
-}

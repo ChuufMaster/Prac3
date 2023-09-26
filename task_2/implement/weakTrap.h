@@ -7,7 +7,6 @@ class weakTrap : Trap {
 
 
 public:
-	int steppedOn();
 
 	weakTrap(Engine* core);
 };
