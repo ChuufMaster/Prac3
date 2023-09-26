@@ -17,6 +17,7 @@ public:
 	Tile* left = NULL;
 	Tile* right = NULL;
 	int id;
+	string color;
 
 	Trap* getTrap();
 

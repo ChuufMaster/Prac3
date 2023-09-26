@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <queue>
 
 using namespace std;
 
@@ -15,7 +16,9 @@ class Lair {
 private:
 	vector<vector<Tile*>> grid;
 	vector<Tile*> tiles;
-	vector<Hero*> heroes;
+	queue<Hero*> heroes;
+
+	Tile* attach(Tile* _t, int _col, int _row, char direction);
 public:
 	Tile* getFirstTile();
 
