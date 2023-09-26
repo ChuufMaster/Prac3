@@ -24,7 +24,7 @@ public:
 
 	void removeTrap();
 
-	void researchTrap();
+	void researchTrap(int param);
 
 	void removeTrapFromQueue();
 

@@ -54,7 +54,7 @@ void Menu::removeTrap() {
 }
 
 void Menu::researchTrap(int param) {
-	this->core->
+	this->core->executeResearch(param);
 }
 
 void Menu::removeTrapFromQueue() {
@@ -63,8 +63,7 @@ void Menu::removeTrapFromQueue() {
 }
 
 void Menu::viewHorde() {
-	// TODO - implement Menu::viewHorde
-	throw "Not yet implemented";
+	cout << this->core->requestBankTotal() << endl;
 }
 
 Menu::Menu(){
