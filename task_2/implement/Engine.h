@@ -1,14 +1,18 @@
 #ifndef ENGINE_H
 #define ENGINE_H
+#include <string>
+#include <queue>
+#include <iostream>
 
+using namespace std;
 class Engine {
 
 private:
 	int roundCounter;
 
 public:
-	void notifyBank();
-
+	bool notifyBankReduction();
+	int requestBankTotal();
 	void notifyTile();
 
 	void notifyHero();
@@ -18,6 +22,8 @@ public:
 	void notifyResearch();
 
 	void executeResearch();
+
+	void notifyNewPlayerRound();
 };
 
 #endif
