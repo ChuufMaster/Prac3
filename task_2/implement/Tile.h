@@ -2,6 +2,7 @@
 #define TILE_H
 
 #include <string>
+#include <vector>
 
 class Trap;
 
@@ -11,10 +12,10 @@ class Tile {
 private:
 	Trap* trap;
 public:
-	Tile* top;
-	Tile* down;
-	Tile* left;
-	Tile* right;
+	Tile* top = NULL;
+	Tile* down = NULL;
+	Tile* left = NULL;
+	Tile* right = NULL;
 	int id;
 
 	Trap* getTrap();
@@ -23,9 +24,10 @@ public:
 
 	Tile(Trap* trap, int id);
 
-	string toString();
+	vector<vector<char>> toString();
 
 	void attach(string direction, Tile* _t);
+
 };
 
 #endif

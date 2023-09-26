@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ class Hero;
 class Lair {
 
 private:
+	vector<vector<Tile*>> grid;
 	vector<Tile*> tiles;
 	vector<Hero*> heroes;
 public:
@@ -21,7 +23,7 @@ public:
 
 	string toString();
 
-	void addTile(Tile* _tile);
+	void addTile(Tile* _tile, int _x, int _y);
 
 	void addHero(Hero* _h);
 
