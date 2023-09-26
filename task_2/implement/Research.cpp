@@ -25,12 +25,26 @@ void Research::setUnlocked()
 void Research::addToQueue(int trapNum)
 {
 	int cost = this->traps[trapNum]->researchCost;
-	// ask enige if player has enough gold
+	// ask engine if player has enough gold
 	bool canAfford = this->heart->notifyBankReduction();
 	if (canAfford)
 	{
-	//	cout<<trapNum<<" SUCCESSFULLY ADDED TO QUEUE COMPLETE IN: "<<traps[trapNum]->roundsTillComplete<<" ROUNDS."<<"\n";
-	researchQueue.push()
+		cout<<trapNum<<" SUCCESSFULLY ADDED TO QUEUE COMPLETE IN: "<<traps[trapNum]->roundsTillComplete<<" ROUNDS."<<"\n";
+	researchQueue.push(traps[trapNum]);
+	} else {
+		cout<<"CANT AFFORD";
+	}
+}
+
+void Research::newRound(){
+	if(researchQueue.size()<=0){
+		return;
+	}
+	researchQueue.front()->roundsTillComplete-1;
+	if(researchQueue.front()->roundsTillComplete<=0){
+		researchQueue.front()->setUnlocked();
+		researchQueue.pop();
+		cout<<"RESEARCH COMPLETED";
 	}
 }
 

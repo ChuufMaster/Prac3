@@ -3,6 +3,7 @@
 #include <string>
 #include <queue>
 #include "Engine.h"
+
 using namespace std;
 class Research {
 
@@ -18,6 +19,8 @@ public:
 	bool getUnlocked();
 
 	void setUnlocked();
+
+		void newRound();
 
 	void addToQueue(int trapNum);
 

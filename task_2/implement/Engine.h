@@ -1,6 +1,10 @@
 #ifndef ENGINE_H
 #define ENGINE_H
+#include <string>
+#include <queue>
+#include <iostream>
 
+using namespace std;
 class Engine {
 
 private:
