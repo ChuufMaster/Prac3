@@ -14,7 +14,7 @@ public:
 
 	Bank(int startingGold);
 
-	void reduceGold(int reductionAmount);
+	bool reduceGold(int reductionAmount);
 
 	void newRound();
 };

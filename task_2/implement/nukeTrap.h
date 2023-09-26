@@ -9,9 +9,7 @@ class nukeTrap : public Trap {
 public:
 	int steppedOn();
 
-	nukeTrap();
-
-	string toString();
+	nukeTrap(Engine* core);
 };
 
 #endif

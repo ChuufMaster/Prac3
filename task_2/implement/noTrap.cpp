@@ -1,16 +1,11 @@
 #include "noTrap.h"
 
-void noTrap::steppedOn() {
-	// TODO - implement noTrap::steppedOn
-	throw "Not yet implemented";
+int noTrap::steppedOn() {
+return 0;
 }
 
 noTrap::noTrap() {
-	// TODO - implement noTrap::noTrap
-	throw "Not yet implemented";
-}
-
-string noTrap::toString() {
-	// TODO - implement noTrap::toString
-	throw "Not yet implemented";
+	this->damage = 0;
+	this->character = "_";
+	this->cost = 0;
 }

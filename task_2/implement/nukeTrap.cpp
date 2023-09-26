@@ -1,14 +1,13 @@
 #include "nukeTrap.h"
 
 int nukeTrap::steppedOn() {
+	this->core->notifyHero(damage,character);
 return 1000;
 }
 
-nukeTrap::nukeTrap() {
+nukeTrap::nukeTrap(Engine* core) {
 	this->damage = 1000;
-}
-
-string nukeTrap::toString() {
-	// TODO - implement nukeTrap::toString
-	throw "Not yet implemented";
+	this->character = "N";
+	this->cost = 1500;
+	this->core = core;
 }

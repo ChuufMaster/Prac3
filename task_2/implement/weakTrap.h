@@ -9,9 +9,7 @@ class weakTrap : Trap {
 public:
 	int steppedOn();
 
-	weakTrap();
-
-	string toString();
+	weakTrap(Engine* core);
 };
 
 #endif
