@@ -7,5 +7,8 @@ teleportTrap::teleportTrap(Engine* core) {
 	this->character = "T";
 	this->cost = 450;
 	this->core = core;
+		this->researchCost =900;
+	this->roundsTillComplete =3;
+	this->unlocked = false;
 }
 

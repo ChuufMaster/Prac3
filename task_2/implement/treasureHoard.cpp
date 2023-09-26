@@ -6,4 +6,7 @@ treasureHoard::treasureHoard(Engine* core) {
 	this->character = "H";
 	this->cost = 0;
 	this->core = core;
+		this->researchCost =0;
+	this->roundsTillComplete =0;
+	this->unlocked = true;
 }

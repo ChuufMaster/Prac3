@@ -10,4 +10,7 @@ nukeTrap::nukeTrap(Engine* core) {
 	this->character = "N";
 	this->cost = 1500;
 	this->core = core;
+		this->researchCost =800;
+	this->roundsTillComplete =6;
+	this->unlocked = false;
 }

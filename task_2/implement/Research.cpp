@@ -24,6 +24,10 @@ void Research::setUnlocked()
 
 void Research::addToQueue(int trapNum)
 {
+	if(traps[trapNum]->getUnlocked()==true){
+		cout<<"ALL READY RESEARCHED DUMB***";
+		return;
+	}
 	int cost = this->traps[trapNum]->researchCost;
 	// ask engine if player has enough gold
 	bool canAfford = this->heart->notifyBankReduction(cost);
