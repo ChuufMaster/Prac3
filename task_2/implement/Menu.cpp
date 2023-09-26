@@ -66,7 +66,11 @@ void Menu::removeTrapFromQueue(string character) {
 }
 
 void Menu::viewHorde() {
+<<<<<<< HEAD
 cout<<"HOARD TOTAL: "<<this->core->requestBankTotal();
+=======
+	cout << this->core->requestBankTotal() << endl;
+>>>>>>> f86ae318bddf953e7277787fcbcdaa63f73f4033
 }
 
 Menu::Menu(){
