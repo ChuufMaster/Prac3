@@ -7,11 +7,9 @@ class treasureHoard : Trap {
 
 
 public:
-	int steppedOn();
 
-	treasureHoard();
+	treasureHoard(Engine* core);
 
-	string toString();
 };
 
 #endif

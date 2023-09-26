@@ -7,11 +7,8 @@ class teleportTrap : Trap {
 
 
 public:
-	int steppedOn();
 
-	teleportTrap();
-
-	string toString();
+	teleportTrap(Engine* core);
 };
 
 #endif

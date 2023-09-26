@@ -1,11 +1,11 @@
 #include "noTrap.h"
 
-int noTrap::steppedOn() {
-return 0;
-}
-
-noTrap::noTrap() {
+noTrap::noTrap(Engine* core) {
 	this->damage = 0;
 	this->character = "_";
 	this->cost = 0;
+	this->core = core;
+	this->researchCost =0;
+	this->roundsTillComplete =0;
+	this->unlocked = true;
 }

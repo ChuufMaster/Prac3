@@ -7,9 +7,8 @@ class noTrap : Trap {
 
 
 public:
-	int steppedOn();
 
-	noTrap();
+	noTrap(Engine* core);
 };
 
 #endif
