@@ -8,6 +8,8 @@
 #include "Hero.h"
 #include "Trap.h"
 using namespace std;
+
+class Research;
 class Engine
 {
 
@@ -31,6 +33,8 @@ public:
 	void executeResearch(int trapNum);
 
 	void notifyNewPlayerRound();
+
+	void play();
 	
 	Engine(Bank* bank,Research* research,Hero* hero);
 };

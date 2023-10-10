@@ -20,6 +20,8 @@ int main(int argc, const char** argv) {
             //menu->removeTrapFromQueue(param[0]);
         }else if(param == "horde"){
             menu->viewHorde();
+        }else if(param == "play"){
+            menu->play();
         }
     }
     return 0;

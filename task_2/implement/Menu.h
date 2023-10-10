@@ -13,9 +13,9 @@ class Menu {
 private:
 	int numTrap = 0;
 	Engine* core;
-	Lair* lair;
 
 public:
+	Lair* lair;
 	void addTile(string param);
 
 	void removeTile();
@@ -31,6 +31,8 @@ public:
 	void removeTrapFromQueue(string character);
 
 	void viewHorde();
+
+	void play();
 
 	Menu();
 };

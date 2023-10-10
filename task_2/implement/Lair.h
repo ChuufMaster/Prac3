@@ -15,6 +15,7 @@ class Lair {
 
 private:
 	vector<vector<Tile*>> grid;
+	//vector<vector<Tile*>> grid(5, vector<Tile*>(5, nullptr));
 	vector<Tile*> tiles;
 	queue<Hero*> heroes;
 
@@ -31,6 +32,8 @@ public:
 	void addHero(Hero* _h);
 
 	Lair();
+
+	void play();
 
 	void removeTile(int _col, int _row);
 };

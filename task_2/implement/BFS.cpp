@@ -21,31 +21,34 @@
 	Return "Item not found" (if item not found)
  */
 Tile* BFS::next() {
+	//cout << "GOD" << endl;
 	if (this->current->getTrap()->toString() == "H") {
 		return nullptr;
 	}
 
 	this->current->color = "\033[0m";
 
-	if (this->current->left != NULL && this->wasVisited(this->current->left)) {
+	if (this->current->left != NULL && !this->wasVisited(this->current->left)) {
 		this->visited.push(this->current->left);
 		this->current = this->current->left;
+		
 	}
-	else if (this->current->top != NULL && this->wasVisited(this->current->top)) {
+	else if (this->current->top != NULL && !this->wasVisited(this->current->top)) {
 		this->visited.push(this->current->top);
 		this->current = this->current->top;
 	}
-	else if (this->current->right != NULL && this->wasVisited(this->current->right)) {
+	else if (this->current->right != NULL && !this->wasVisited(this->current->right)) {
 		this->visited.push(this->current->right);
 		this->current = this->current->right;
 	}
-	else if (this->current->down != NULL && this->wasVisited(this->current->down)) {
+	else if (this->current->down != NULL && !this->wasVisited(this->current->down)) {
 		this->visited.push(this->current->down);
 		this->current = this->current->down;
 	}
 	else {
 		queue<Tile*> empty;
 		swap(this->visited, empty);
+		this->visited.push(this->current);
 		return this->next();
 	}
 
@@ -53,3 +56,4 @@ Tile* BFS::next() {
 	return this->current;
 
 }
+

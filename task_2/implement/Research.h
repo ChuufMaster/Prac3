@@ -5,9 +5,12 @@
 #include "Engine.h"
 
 using namespace std;
+
+class Trap;
+class Engine;
 class Research {
 
-public:
+	public:
 	int researchCost;
 	int roundsTillComplete;
 	bool unlocked;
@@ -15,17 +18,17 @@ public:
 	Trap* traps[5];
 	queue<Trap*> researchQueue;
 
-public:
-	bool getUnlocked();
+	public:
+	virtual bool getUnlocked();
 
-	void setUnlocked();
+	virtual void setUnlocked();
 
-		void newRound();
+	void newRound();
 
 	void addToQueue(int trapNum);
 	void removeFromQueue(string trapIcon);
-	Research(Trap* traps[],Engine* core);
-		Research();
+	Research(Trap* traps[], Engine* core);
+	Research();
 };
 
 #endif

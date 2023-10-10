@@ -4,18 +4,21 @@
 #include "Research.h"
 using namespace std;
 
-class Trap : public Research {
+class Trap /*:public Research */{
 
-
-
-public:
+	public:
+	int researchCost;
+	int roundsTillComplete;
+	bool unlocked;
 
 	string toString();
 	Engine* core;
-		int damage;
+	int damage;
 	int cost;
 	string character;
 	int steppedOn();
+	bool getUnlocked();
+	void setUnlocked();
 };
 
 #endif

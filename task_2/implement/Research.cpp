@@ -44,7 +44,7 @@ void Research::newRound(){
 	if(researchQueue.size()<=0){
 		return;
 	}
-	researchQueue.front()->roundsTillComplete-1;
+	researchQueue.front()->roundsTillComplete--;
 	if(researchQueue.front()->roundsTillComplete<=0){
 		researchQueue.front()->setUnlocked();
 				cout<<"RESEARCH FOR "<< researchQueue.front()->character << " COMPLETED";

@@ -19,15 +19,15 @@ public:
 	Tile* left = NULL;
 	Tile* right = NULL;
 	int id;
-	string color;
+	string color = "";
 
 	Trap* getTrap();
 
 	void setTrap(Trap* trap);
 
-	Tile(Trap* trap, int id, Engine* core);
+	Tile(Trap* trap, Engine* core, int id);
 
-	vector<vector<char>> toString();
+	vector<vector<string>> toString();
 
 	void attach(string direction, Tile* _t);
 

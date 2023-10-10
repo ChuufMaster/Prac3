@@ -7,12 +7,15 @@
 #include "teleportTrap.h"
 #include "nukeTrap.h"
 #include "Lair.h"
+#include "Bank.h"
+#include "Wizard.h"
 
 
 void Menu::addTile(string param) {
 
-	int _row = param[0];
-	int _col = param[1];
+	int _row = param[0] - '0';
+	int _col = param[1] - '0';
+	//cout << param[0] << param[1] << endl;
 	Trap* _trap;
 	switch (param[2])
 	{
@@ -35,7 +38,8 @@ void Menu::addTile(string param) {
 		_trap = new noTrap(this->core);
 		break;
 	}
-	Tile* _t = new Tile(_trap, this->numTrap++, this->core);
+	//cout << "THIS" << endl;
+	Tile* _t = new Tile(_trap, this->core, this->numTrap++);
 	this->lair->addTile(_t, _col, _row);
 }
 
@@ -65,9 +69,15 @@ void Menu::removeTrapFromQueue(string character) {
 }
 
 void Menu::viewHorde() {
-cout<<"HOARD TOTAL: "<<this->core->requestBankTotal();
+cout<<"HOARD TOTAL: "<<this->core->requestBankTotal() << endl;
 }
 
 Menu::Menu(){
 	this->lair = new Lair();
+	this->core = new Engine(new Bank(1000), new Research(), new Wizard(100, 100));
+}
+
+void Menu::play(){
+	//cout << "HELP" << endl;
+	this->lair->play();
 }

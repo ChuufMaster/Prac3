@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include "BFS.h"
 
 Engine::Engine(Bank* bank,Research* research,Hero* hero){
 	this->bank = bank;
@@ -47,4 +48,8 @@ void Engine::executeResearch(int trapNum)
 void Engine::notifyNewPlayerRound()
 {
 	this->research->newRound();
+}
+
+void Engine::play(){
+	this->hero->iterator->next();
 }

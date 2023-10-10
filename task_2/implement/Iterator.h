@@ -10,11 +10,12 @@ class Iterator {
 
 protected:
 	queue<Tile*> visited;
-	Tile* current;
+	Tile* current = nullptr;
 
 public:
 	virtual Tile* next() = 0;
 	bool wasVisited(Tile* _t);
+	virtual void setTile(Tile* tile);
 };
 
 #endif
