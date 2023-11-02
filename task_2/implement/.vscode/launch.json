@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/ivanh/Documents/TUKS/COS 214/Pracs/Prac3/task_2/implement",
-      "program": "c:/Users/ivanh/Documents/TUKS/COS 214/Pracs/Prac3/task_2/implement/build/Debug/outDebug",
+      "cwd": "g:/Other computers/My Laptop/TUKS/COS 214/Pracs/Prac3/task_2/implement",
+      "program": "g:/Other computers/My Laptop/TUKS/COS 214/Pracs/Prac3/task_2/implement/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

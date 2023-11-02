@@ -1,0 +1,108 @@
+Contract name:	ANOther test
+Number of Parties:	3
+Add condition Y/N:	y
+Condition?	Contract updated to: Negotiation
+Test please work
+Contract ANOther test
+	State:Negotiation
+	Conditions:
+		Test please work
+Do you wish to continue adding conditions (y or n)?	y
+Condition?	Contract updated to: Negotiation
+HELP?
+Contract ANOther test
+	State:Negotiation
+	Conditions:
+		Test please work
+		HELP?
+Do you wish to continue adding conditions (y or n)?	n
+Remove Condition? Y/N:	y
+Which condition do you want removed?
+HELP?
+Contract updated to: Negotiation
+Contract ANOther test
+	State:Negotiation
+	Conditions:
+		Test please work
+Would you like to remove another? Y/N:	n
+Accept Y/N:	y
+Contract updated to: Tentatively Accepted
+Contract updated to: Tentatively Accepted
+
+Contract ANOther test
+	State:Tentatively Accepted
+	Votes:
+		1
+		0
+		0
+	Conditions:
+		Test please work
+
+Accept Y/N:	y
+Contract updated to: Tentatively Accepted
+
+Contract ANOther test
+	State:Tentatively Accepted
+	Votes:
+		1
+		1
+		0
+	Conditions:
+		Test please work
+
+Accept Y/N:	y
+Contract updated to: Accepted
+Contract updated to: Accepted
+
+Contract ANOther test
+	State:Accepted
+	Votes:
+		0
+		0
+		0
+	Conditions:
+		Test please work
+
+Accept Y/N:	y
+Complete contract? Y/N:	y
+Contract updated to: Accepted
+
+Contract ANOther test
+	State:Accepted
+	Votes:
+		1
+		0
+		0
+	Conditions:
+		Test please work
+
+Complete contract? Y/N:	y
+Contract updated to: Accepted
+
+Contract ANOther test
+	State:Accepted
+	Votes:
+		1
+		1
+		0
+	Conditions:
+		Test please work
+
+Complete contract? Y/N:	y
+Contract updated to: Completed
+Contract updated to: Completed
+
+Contract ANOther test
+	State:Completed
+	Conditions:
+		Test please work
+
+Complete contract? Y/N:	y
+Final Contract: 
+
+Contract ANOther test
+	State:Completed
+	Conditions:
+		Test please work
+
+Would you like to make another contract? Y/N:	n
